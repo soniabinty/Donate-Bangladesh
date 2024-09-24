@@ -171,6 +171,6 @@ donationBtn.addEventListener('click', function(){
 
 const blogBtn = document.getElementById('blog')
 blogBtn.addEventListener('click', function(){
-  window.location.href ='/blog.html'
+  window.location.href ='./blog.html'
 })
 
