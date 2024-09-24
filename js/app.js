@@ -1,12 +1,13 @@
 
 
 document.getElementById('donate-clicker').addEventListener('click',function(){
-  const money = getInputValueById('money-donate')
+  const moneyDonate =document.getElementById('money-donate').value;
+  const money = parseFloat(moneyDonate)
   const balance =getTextValueById('increase-money')
   const mainBalance = getTextValueById('main-balance')
 
   // validiction
-if(isNaN(money)|| money<0 || money>mainBalance){
+if(isNaN(moneyDonate)|| money<0 || money>mainBalance){
 
 
    alert('Invalid Donate Amount')
@@ -48,12 +49,13 @@ container.insertBefore(div , container.firstChild)
 
 document.getElementById('feni-donate').addEventListener('click',function(){
 
- const money = getInputValueById('feni-money')
+  const moneyDonate =document.getElementById('feni-money').value;
+  const money = parseFloat(moneyDonate)
   const balance =getTextValueById('feni-balance')
   const mainBalance = getTextValueById('main-balance')
 
   // validiction
-  if(isNaN(money)|| money<0|| money>mainBalance){
+  if(isNaN(moneyDonate)|| money<0|| money>mainBalance){
 
 
     alert('Invalid Donate Amount')
@@ -95,12 +97,13 @@ const container =document.getElementById('transection-contain')
 
 document.getElementById('quota-donate').addEventListener('click',function(){
 
-  const money = getInputValueById('quota-money')
+  const moneyDonate =document.getElementById('quota-money').value;
+  const money = parseFloat(moneyDonate)
   const balance =getTextValueById('quata-balance')
   const mainBalance = getTextValueById('main-balance')
 // validiction
 
-  if(isNaN(money)|| money<0 || money>mainBalance){
+  if(isNaN(moneyDonate)|| money<0 || money>mainBalance){
 
 
     alert('Invalid Donate Amount')
